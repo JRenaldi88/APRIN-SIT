@@ -4,6 +4,7 @@ import Formulario from './components/Formulario'
 import SobreNosotros from './components/SobreNosotros'
 import Footer from './components/Footer'
 import Navbar from './components/Navbar'
+import { motion } from "framer-motion";
 
 
 function App() {

@@ -1,10 +1,8 @@
 import React, { useState } from 'react';
 import ImgPlanta from '/public/img/Frame-planta.png';
-import ImgServicios from '/public/img/servicio.jpg';
 
 
 const Servicios = () => {
-  const [showDesignText, setShowDesignText] = useState(true);
   return (
 
     <div className='bg-purple-950 font-mont' id='Servicios'>
@@ -22,9 +20,11 @@ const Servicios = () => {
 
             <h2 className="text-2xl font-bold mt-8 ">Diseño Web</h2>
             <div>
-              {showDesignText && (
-                <p className="text-justify mt-10 ">Diseñamos la apariencia visual y la experiencia del usuario en un sitio web o aplicación web. Utilizamos una variedad de herramientas y técnicas para crear diseños atractivos y funcionales que mejoren la experiencia del usuario y refuercen la marca y la identidad visual de una empresa o individuo.</p>
-              )}
+                <p className="text-justify mt-10 ">Diseñamos la apariencia visual y la experiencia del usuario en un sitio web o aplicación web. 
+                  Utilizamos una variedad de herramientas y técnicas para crear diseños atractivos y funcionales que mejoren la experiencia del usuario 
+                  y refuercen la marca y la identidad visual de una empresa o individuo.
+                </p>
+              
             </div>
           </div>
           <div className="bg-purple-950 p-4 text-white text-center">
@@ -47,11 +47,6 @@ const Servicios = () => {
           <div className='justify-center '>
             <img src={ImgPlanta} alt="img-planta" width='200' height='260' className="lg:col-span-1 " />
           </div>
-
-          {/*<div className="col-span-3 grid place-items-center" >
-            <img src={ImgServicios} alt="img-servicios" className='md:ml-20 mt-20 w-[90%] hidden md:grid' />
-              </div>*/ }
-
         </div>
       </div>
     </div>
